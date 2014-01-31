@@ -1,7 +1,13 @@
 Easytip
 =======
 
-jQuery Plugin to add a tooltip to any element
+jQuery Plugin to add a hover tooltip to any element.  
+
+Example:
+HTML:
+<input id="left" type="text"/>
+JavaScript:
+$("#left").easytip({ easyMessage: "Help to the left", easyPosition: "left" });
 
 
 License:
