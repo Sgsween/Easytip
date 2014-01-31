@@ -1,7 +1,7 @@
 Easytip
 =======
 
-jQuery Plugin to add a hover tooltip to any element.  
+jQuery Plugin to add a hover tooltip to an element.  Supports tips on the left, right, above, below, and overlay of the target element.
 
 Example:
 HTML:
