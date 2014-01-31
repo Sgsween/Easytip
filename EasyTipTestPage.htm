@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+     <title>Easytip Test Page</title>
+     <style type="text/css">
+        input
+        {
+            margin-bottom: 25px;
+        }
+        div
+        {
+            position:absolute; 
+            left:500px; 
+            top: 50px;
+        }
+     </style>
+     <link href="easytip.css" rel="stylesheet" type="text/css" />
+     <script type="text/javascript" src="jQuery1.11.0.min.js"></script> 
+     <script type="text/javascript" src="jquery.easytip.min.js"></script>
+</head>
+<body>
+<div>
+    <input id="left" type="text"/>
+    <br />
+    <input id="above" type="text"/>
+     <br />
+    <input id="right" type="text"/>
+     <br />
+    <input id="below" type="text"/>
+    <br />
+    <input id="overlay" type="text"/>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $("#left").easytip({ easyMessage: "Help to the left", easyPosition: "left" });
+            $("#above").easytip({ easyMessage: "Help above the element", easyPosition: "above" });
+            $("#right").easytip({ easyMessage: "Help to the right", easyPosition: "right" });
+            $("#below").easytip({ easyMessage: "Help below the element", easyPosition: "below" });
+            $("#overlay").easytip({ easyMessage: "Help over the element", easyPosition: "overlay" });
+        }); 
+
+    </script>
+</body>
+</html>
