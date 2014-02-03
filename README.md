@@ -12,10 +12,10 @@ Features
 
 Options
 --------
-easyMessage: Supply text to display in the tooltip or a function to get the text to display
-easyClass: Default class is easy-tip.  Supply a custom class or mulitple classes to include.
-easyPosition: Possible values are left, right, above, below, and overlay.
-easyCss: Supply a jQuery css string to override tooltip style at the element level.
+- easyMessage: Supply text to display in the tooltip or a function to get the text to display
+- easyClass: Default class is easy-tip.  Supply a custom class or mulitple classes to include.
+- easyPosition: Possible values are left, right, above, below, and overlay.
+- easyCss: Supply a jQuery css string to override tooltip style at the element level.
 
 Prequisites
 --------
@@ -33,7 +33,7 @@ http://jsfiddle.net/ShawnGSweeney/tU3zL
 Basic Example:
 --------
 <pre>
-input id="left" type="text"
+HTML: input id="left" type="text"
 
 JavaScript:  $("#left").easytip({ easyMessage: "Help to the left", easyPosition: "left" });
 </pre>
