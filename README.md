@@ -4,9 +4,18 @@ Easytip
 jQuery Plugin to add a hover tooltip to an element.  Supports tips on the left, right, above, below, and overlay of the target element.
 
 Demo: http://jsfiddle.net/ShawnGSweeney/tU3zL/4/
- 
-License:
+--------
 
+Basic Example:
+--------
+HTML: <input id="left" type="text"/>
+
+JavaScript:  $("#left").easytip({ easyMessage: "Help to the left", easyPosition: "left" });
+
+
+
+License:
+--------
 Easytip 1.0.0 | 01/31/2014
 Developed by Shawn Sweeney under the MIT license http://opensource.org/licenses/MIT
 
