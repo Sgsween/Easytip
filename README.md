@@ -28,7 +28,7 @@ Getting Started
 
 Demo: 
 --------
-http://jsfiddle.net/ShawnGSweeney/tU3zL
+http://jsfiddle.net/ShawnGSweeney/tU3zL/5
 
 Basic Example:
 --------
@@ -38,7 +38,7 @@ HTML: input id="left" type="text"
 JavaScript:  $("#left").easytip({ easyMessage: "Help to the left", easyPosition: "left" });
 </pre>
 
-**See <code>EasyTipTestPage.htm</code>** or the demo: http://jsfiddle.net/ShawnGSweeney/tU3zL for a complete list of examples
+**See <code>EasyTipTestPage.htm</code>** or the demo: http://jsfiddle.net/ShawnGSweeney/tU3zL/5 for a complete list of examples
 
 Browser support
 --------
