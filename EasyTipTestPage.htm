@@ -12,6 +12,21 @@
             position:absolute; 
             left:500px;  
         }
+        h1
+        {
+           background: #999999;
+           width: 500px;
+           padding: 2px 4px 2px 4px;
+           -webkit-border-radius: 8px;
+           -moz-border-radius:8px;
+           border-radius: 8px;
+            color: #ffffff;
+        }
+        h1 span
+        {
+            font-size: 12px;
+            text-decoration: underline;
+        }
      </style>
      <link href="easytip.css" rel="stylesheet" type="text/css" />
      <script type="text/javascript" src="jQuery1.11.0.min.js"></script> 
@@ -19,7 +34,8 @@
 </head>
 <body>
 <div>
-    <h2>EasyTip Demo</h2>
+    <h1>Easytip<span>simple & customizable tooltip plugin</span></h1>
+    <h2>Demo</h2>
     <h3>Position Left:</h3>
     <pre>$("#left").easytip({ easyMessage: "Help to the left", easyPosition: "left" });</pre>
     <input id="left" type="text"/> 
