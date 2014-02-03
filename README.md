@@ -8,10 +8,11 @@ Demo: http://jsfiddle.net/ShawnGSweeney/tU3zL/4/
 
 Basic Example:
 --------
+<pre>
 HTML: "<input id="left" type="text"/>"
 
 JavaScript:  $("#left").easytip({ easyMessage: "Help to the left", easyPosition: "left" });
-
+</pre>
 
 
 License:
