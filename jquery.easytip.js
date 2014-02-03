@@ -44,6 +44,9 @@ THE SOFTWARE.
             var $elem = $(this);
             var $span = $(document.createElement("span")).addClass(easySettings.easyClass)
                                                     .html(easySettings.easyMessage).css(setcss($elem));
+            if ($elem.data("easytip").settings.easyCss) {
+                $span.css($elem.data("easytip").settings.easyCss);
+            }
             $elem.after($span);
         },
         function () {
@@ -53,9 +56,9 @@ THE SOFTWARE.
         //private
         function setcss($elem) {
             var settings = $elem.data("easytip").settings;
-            if(settings.easyPosition === "left") 
+            if (settings.easyPosition === "left")
                 return { left: $elem.position().left - gettextwidth(settings.easyMessage), top: $elem.position().top };
-            else if(settings.easyPosition === "above")
+            else if (settings.easyPosition === "above")
                 return { left: $elem.position().left, top: $elem.position().top - $elem.outerHeight() };
             else if (settings.easyPosition === "right")
                 return { left: $elem.position().left + $elem.outerWidth(), top: $elem.position().top };

@@ -10,8 +10,7 @@
         div
         {
             position:absolute; 
-            left:500px; 
-            top: 50px;
+            left:500px;  
         }
      </style>
      <link href="easytip.css" rel="stylesheet" type="text/css" />
@@ -20,15 +19,34 @@
 </head>
 <body>
 <div>
-    <input id="left" type="text"/>
+    <h2>EasyTip Demo</h2>
+    <h3>Position Left:</h3>
+    <pre>$("#left").easytip({ easyMessage: "Help to the left", easyPosition: "left" });</pre>
+    <input id="left" type="text"/> 
     <br />
+    <h3>Position Above:</h3>
+    <pre> $("#above").easytip({ easyMessage: "Help above the element", easyPosition: "above" });</pre>
     <input id="above" type="text"/>
      <br />
+     <h3>Position Right:</h3>
+     <pre>$("#right").easytip({ easyMessage: "Help to the right", easyPosition: "right" });</pre>
     <input id="right" type="text"/>
      <br />
+     <h3>Position Below:</h3>
+     <pre>$("#below").easytip({ easyMessage: "Help below the element", easyPosition: "below" });</pre>
     <input id="below" type="text"/>
     <br />
+    <h3>Position Overlay:</h3>
+    <pre> $("#overlay").easytip({ easyMessage: "Help over the element", easyPosition: "overlay" });</pre>
     <input id="overlay" type="text"/>
+    <br />
+    <h3>Get message text with a function:</h3>
+    <pre> $("#function").easytip({ easyMessage: function(){}, easyPosition: "right" });</pre>
+    <input id="function" type="text" title="My tooltip came from my title attribute" />
+    <br />
+    <h3>Supply element Css:</h3>
+    <pre> $("#css").easytip({ easyMessage: "My tool tip has custom Css to change the text color and weight", easyPosition: "right", easyCss: {"font-weight": "bold", "color": "black"} });</pre>
+    <input id="css" type="text" />
     </div>
     <script type="text/javascript">
         $(function () {
@@ -37,6 +55,8 @@
             $("#right").easytip({ easyMessage: "Help to the right", easyPosition: "right" });
             $("#below").easytip({ easyMessage: "Help below the element", easyPosition: "below" });
             $("#overlay").easytip({ easyMessage: "Help over the element", easyPosition: "overlay" });
+            $("#function").easytip({ easyMessage: function () { return $("#function").attr("title"); }, easyPosition: "right" });
+            $("#css").easytip({ easyMessage: "My tool tip has custom Css to change the text color and weight", easyPosition: "right", easyCss: {"font-weight": "bold", "color": "black"} });
         }); 
 
     </script>
